@@ -1,149 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> Chess | Game </title>
-  <link rel="stylesheet" href="./src/styles/utils.css">
-  <link rel="stylesheet" href="./src/styles/style.css">
-  <link rel="shortcut icon" href="./public/asserts/favIcon/web/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chess | Game</title>
+    <link rel="stylesheet" href="./src/styles/utils.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./public/asserts/favIcon/web/favicon.ico"
+      type="image/x-icon"
+    />
   </head>
-<body>
-  <h1>Lets Play!</h1>
+  <body>
+    <h1>Lets Play!</h1>
 
-  <div class="gameover-popup hide">
-    <div class="title">Player2 Wins!</div>
-    <p class="message">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <div class="options">
-      <button>
-        <a href=""><img src="./public/asserts/icons/home.svg" alt="home"></a>
-      </button>
-      <button id="retry">
-        <a href="/"><img src="./public/asserts/icons/retry.svg" alt="retry"></a>
-      </button>
-    </div>
-  </div>
-
-  <div class="setting-panel hide">
-    <div id="title">
-      <p>Setting</p>
-      <img src="./public/asserts/icons/cross.svg"alt="">
-    </div>
-    <hr>
-    <div class="setting-btns">
-      <div class="btns"><a href=""><img src="./public/asserts/icons/home.png" alt="H"></a></div>
-      <div class="btns" id="reset"><a href="/"><img src="./public/asserts/icons/retry.png" alt="R"></a></div>
-      <div class="btns"><img id="volumn" src="./public/asserts/icons/volumn.svg" alt="V"></div>
-    </div>
-  </div>
-
-  <div class="score-board">
-    <div class="gotimeter">
-      <div class="black">
-        <div class="icon"></div>
-        <p>8</p>
-      </div>
-      <div class="white">
-        <div class="icon"></div>
-        <p>8</p>
+    <div class="gameover-popup hide">
+      <div class="title">Player2 Wins!</div>
+      <p class="message">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <div class="options">
+        <button>
+          <a href=""
+            ><img src="./public/asserts/icons/home.svg" alt="home"
+          /></a>
+        </button>
+        <button id="retry">
+          <a href="/"
+            ><img src="./public/asserts/icons/retry.svg" alt="retry"
+          /></a>
+        </button>
       </div>
     </div>
-    <div class="gotiindicator"><div class="sign"></div><div class="gotiName">player1</div></div>
-    <div class="setting">
-      <div class="timer">
-        <div class="min">00</div>
-        <div class="dot">:</div>
-        <div class="sec">00</div>
+
+    <div class="setting-panel hide">
+      <div id="title">
+        <p>Setting</p>
+        <img src="./public/asserts/icons/cross.svg" alt="" />
+      </div>
+      <hr />
+      <div class="setting-btns">
+        <div class="btns">
+          <a href=""><img src="./public/asserts/icons/home.png" alt="H" /></a>
+        </div>
+        <div class="btns" id="reset">
+          <a href="/"><img src="./public/asserts/icons/retry.png" alt="R" /></a>
+        </div>
+        <div class="btns">
+          <img id="volumn" src="./public/asserts/icons/volumn.svg" alt="V" />
+        </div>
+      </div>
+    </div>
+
+    <div class="score-board">
+      <div class="gotimeter">
+        <div class="black">
+          <div class="icon"></div>
+          <p>8</p>
+        </div>
+        <div class="white">
+          <div class="icon"></div>
+          <p>8</p>
+        </div>
+      </div>
+      <div class="gotiindicator">
+        <div class="sign"></div>
+        <div class="gotiName">player1</div>
       </div>
       <div class="setting">
-        <img src="./public/asserts/icons/setting.svg" id="icon-setting">
+        <div class="timer">
+          <div class="min">00</div>
+          <div class="dot">:</div>
+          <div class="sec">00</div>
+        </div>
+        <div class="setting">
+          <img src="./public/asserts/icons/setting.svg" id="icon-setting" />
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div id="1" class="column "></div>
-      <div id="2" class="column w"></div>
-      <div id="3" class="column"></div>
-      <div id="4" class="column w"></div>
-      <div id="5" class="column"></div>
-      <div id="6" class="column w"></div>
-      <div id="7" class="column"></div>
-      <div id="8" class="column w"></div>
+    <div class="container">
+      <div class="row">
+        <div id="1" class="column"></div>
+        <div id="2" class="column w"></div>
+        <div id="3" class="column"></div>
+        <div id="4" class="column w"></div>
+        <div id="5" class="column"></div>
+        <div id="6" class="column w"></div>
+        <div id="7" class="column"></div>
+        <div id="8" class="column w"></div>
+      </div>
+      <div class="row">
+        <div id="9" class="column w"></div>
+        <div id="10" class="column"></div>
+        <div id="11" class="column w"></div>
+        <div id="12" class="column"></div>
+        <div id="13" class="column w"></div>
+        <div id="14" class="column"></div>
+        <div id="15" class="column w"></div>
+        <div id="16" class="column"></div>
+      </div>
+      <div class="row">
+        <div id="17" class="column"></div>
+        <div id="18" class="column w"></div>
+        <div id="19" class="column"></div>
+        <div id="20" class="column w"></div>
+        <div id="21" class="column"></div>
+        <div id="22" class="column w"></div>
+        <div id="23" class="column"></div>
+        <div id="24" class="column w"></div>
+      </div>
+      <div class="row">
+        <div id="25" class="column w"></div>
+        <div id="26" class="column"></div>
+        <div id="27" class="column w"></div>
+        <div id="28" class="column"></div>
+        <div id="29" class="column w"></div>
+        <div id="30" class="column"></div>
+        <div id="31" class="column w"></div>
+        <div id="32" class="column"></div>
+      </div>
+      <div class="row">
+        <div id="33" class="column"></div>
+        <div id="34" class="column w"></div>
+        <div id="35" class="column"></div>
+        <div id="36" class="column w"></div>
+        <div id="37" class="column"></div>
+        <div id="38" class="column w"></div>
+        <div id="39" class="column"></div>
+        <div id="40" class="column w"></div>
+      </div>
+      <div class="row">
+        <div id="41" class="column w"></div>
+        <div id="42" class="column"></div>
+        <div id="43" class="column w"></div>
+        <div id="44" class="column"></div>
+        <div id="45" class="column w"></div>
+        <div id="46" class="column"></div>
+        <div id="47" class="column w"></div>
+        <div id="48" class="column"></div>
+      </div>
+      <div class="row">
+        <div id="49" class="column"></div>
+        <div id="50" class="column w"></div>
+        <div id="51" class="column"></div>
+        <div id="52" class="column w"></div>
+        <div id="53" class="column"></div>
+        <div id="54" class="column w"></div>
+        <div id="55" class="column"></div>
+        <div id="56" class="column w"></div>
+      </div>
+      <div class="row">
+        <div id="57" class="column w"></div>
+        <div id="58" class="column"></div>
+        <div id="59" class="column w"></div>
+        <div id="60" class="column"></div>
+        <div id="61" class="column w"></div>
+        <div id="62" class="column"></div>
+        <div id="63" class="column w"></div>
+        <div id="64" class="column"></div>
+      </div>
     </div>
-    <div class="row">
-      <div id="9" class="column w"></div>
-      <div id="10" class="column"></div>
-      <div id="11" class="column w"></div>
-      <div id="12" class="column"></div>
-      <div id="13" class="column w"></div>
-      <div id="14" class="column"></div>
-      <div id="15" class="column w"></div>
-      <div id="16" class="column"></div>
-
-    </div>
-    <div class="row">
-      <div id="17" class="column "></div>
-      <div id="18" class="column w"></div>
-      <div id="19" class="column"></div>
-      <div id="20" class="column w"></div>
-      <div id="21" class="column"></div>
-      <div id="22" class="column w"></div>
-      <div id="23" class="column"></div>
-      <div id="24" class="column w"></div>
-    </div>
-    <div class="row">
-      <div id="25" class="column w"></div>
-      <div id="26" class="column"></div>
-      <div id="27" class="column w"></div>
-      <div id="28" class="column"></div>
-      <div id="29" class="column w"></div>
-      <div id="30" class="column"></div>
-      <div id="31" class="column w"></div>
-      <div id="32" class="column"></div>
-    </div>
-    <div class="row">
-      <div id="33" class="column"></div>
-      <div id="34" class="column w"></div>
-      <div id="35" class="column"></div>
-      <div id="36" class="column w"></div>
-      <div id="37" class="column"></div>
-      <div id="38" class="column w"></div>
-      <div id="39" class="column"></div>
-      <div id="40" class="column w"></div>
-    </div>
-    <div class="row">
-      <div id="41" class="column w"></div>
-      <div id="42" class="column"></div>
-      <div id="43" class="column w"></div>
-      <div id="44" class="column"></div>
-      <div id="45" class="column w"></div>
-      <div id="46" class="column"></div>
-      <div id="47" class="column w"></div>
-      <div id="48" class="column"></div>
-    </div>
-    <div class="row">
-      <div id="49" class="column"></div>
-      <div id="50" class="column w"></div>
-      <div id="51" class="column"></div>
-      <div id="52" class="column w"></div>
-      <div id="53" class="column"></div>
-      <div id="54" class="column w"></div>
-      <div id="55" class="column"></div>
-      <div id="56" class="column w"></div>
-    </div>
-    <div class="row">
-      <div id="57" class="column w"></div>
-      <div id="58" class="column"></div>
-      <div id="59" class="column w"></div>
-      <div id="60" class="column"></div>
-      <div id="61" class="column w"></div>
-      <div id="62" class="column"></div>
-      <div id="63" class="column w"></div>
-      <div id="64" class="column"></div>
-    </div>
-  </div>
-  <audio id="moveAudio" src=""></audio>
-  <script type="module" src="./src/scripts/main.js"></script> 
-</body>
+    <audio id="moveAudio" src=""></audio>
+    <script type="module" src="./src/scripts/main.js"></script>
+  </body>
+</html>
