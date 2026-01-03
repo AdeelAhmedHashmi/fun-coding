@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.png" alt="Quran" height="40">
+                <span>
+                    <h4>Q-Heaven</h4>
+                    <p>Version 2</p>
+                </span>
+            </div>
+            <details class="nav-menu">
+                <summary>☰</summary>
+                <div class="options">
+                    <a href="./main.html">Home</a>
+                </div>
+            </details>
+        </nav>
+    </header>
+    <main>
+        <div class="contactform">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="[your access_key]">
+                <div class="username">
+                    <label for="name">enter your name</label>
+                    <input id="name" title="username" name="name" type="text" required autocomplete="off">
+                </div>
+                <div class="email">
+                    <label for="email">enter your email</label>
+                    <input id="email" title="useremail" name="email" type="text" required>
+                </div>
+                <div class="message">
+                    <textarea name="message" id="feedback" required></textarea>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                </div>
+                <div class="submit">
+                    <button id="submit" title="submit" name="submit" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+        <div class="info contactform"
+            <p>if you face any problem or you want to provide any feedback please contact us </p>
+            <p>We are very Thanksful to your!</p>
+        </div>
+    </main>
+</body>
+<script src="./scripts/contact.js"></script>
+</html>

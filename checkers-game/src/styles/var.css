@@ -1,0 +1,9 @@
+:root{
+      --container-size: 96vmin;
+      --goti-size: 80%;
+      --goti1-color: rgb(26, 25, 25);
+      --goti2-color:  rgb(231, 216, 191);
+      --light-cell-color: rgb(244, 220, 179);
+      --dark-cell-color: rgb(75, 54, 33);
+      --color: rgb(255, 215, 0);
+}

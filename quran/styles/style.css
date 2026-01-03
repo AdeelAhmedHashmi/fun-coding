@@ -1,0 +1,248 @@
+
+@import url('./main.css');
+
+main>h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    margin: 10px;
+    color: var(--main-txt);
+} 
+main .container{
+    padding: 9px; 
+}
+main .container div{
+    background-color: var(--h-bg);
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    transition: all 0.1s linear;
+}
+main .container h2{
+    font-size: 1rem;
+    width: 88%;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+main .container div:hover{
+    transform: scale(1.01);
+}
+main .container span{
+    font-size: 10px;
+}
+.quranContainer{
+    background-color: var(--quran-bg);
+    color: white;
+    padding: 10px;
+    font-size: larger;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 15px;
+    line-height: 30px;
+}
+.quran{
+    font-family: "Amiri Quran", serif ;
+}
+.surahinfo{
+    background-color: var(--h-bg);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.state,.ayats{
+    font-size: 1rem;
+    border: 4px solid black;
+    padding: 7px;
+    width: 70px;
+}
+.startsurah{
+    font-size: larger;
+    color: #f8d281;
+    overflow: hidden;
+}
+.state{
+    border-radius: 10px 0 0 10px;
+}
+.ayats{
+    border-radius: 0 10px 10px 0
+}
+.quranContainer .quran{
+    letter-spacing: 2px;
+    color: var(--quran-txt);
+    line-height: 50px;
+}
+
+.search{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.search input{
+    padding: 7px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    width: 60%;
+    background-color: #f8d281;
+    border: none;
+}
+.search button{
+    padding: 6px;
+    border: none;
+    scale: 1.07;
+    border-radius: 0 10px 10px 0;
+    background-color: #fdae04;
+    color: aliceblue;
+    cursor: pointer;
+}
+input:focus{
+    outline: none;
+}
+.search button:active{
+    scale: 0.9;
+}
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+    margin: 15px 8px;
+}
+.option div{
+    font-size: 0.78rem;
+    margin: 2px;
+    width: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+    border-radius: 50px;
+    color: var(--quran-txt);
+    transition: all 0.2s linear;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+.option div:hover{
+    background-color: var(--quran-bg);
+    color: var(--quran-txt);
+}
+
+audio{
+    height: 30px;
+}
+#audio{
+    margin-left: 10px;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.loading{
+    height: 30px;
+    width: 30px;
+    border: 3px solid #fdae04;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+    display: inline-block;
+    margin-left: 10px;
+}
+#signinForm{
+    background-color: rgba(0, 0, 0, 0.603);
+    height: 2300vh;
+    width: 100vw;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+#signinForm *{
+    overflow: hidden;
+}
+#signinForm form{
+    border-radius: 3%;
+    box-shadow:0px 1px 20px 6px black;
+    width: 280px;
+    height: 300px;
+    background-color: var(--main-txt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    padding: 20px;
+    gap: 20px;
+    row-gap: 10px;
+    animation: appear 1s 1 ease;
+    h1{
+        font-weight: 900;
+        text-align: center;
+        font-size: 3rem;
+    }
+    p{
+        color: rgb(4, 105, 145);
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+    }
+    .optionAccount{
+        border-radius: 10px;
+        background-color: #0000003f;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+        padding: 10px;
+        gap: 10px;
+        cursor: pointer;
+        svg{
+            width: 25%;
+        }
+        div p{
+            font-size: 0.9rem;
+            color: white;
+            margin-bottom: 0;
+        }
+    }
+    .app{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 10px;
+    }
+}
+@keyframes spinner {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+        translate: 0px -10px;
+    }
+    100%{
+        opacity: 1;
+    }
+}

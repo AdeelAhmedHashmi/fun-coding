@@ -1,0 +1,52 @@
+.jump{
+    animation: jump 0.7s infinite linear !important; 
+}
+.hide{
+    display: none !important;
+}
+.stone-animation{
+    animation-name: come;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.level-1{
+    animation-duration: 2s;
+}
+.level-2{
+    animation-duration: 1s;
+}
+.start{
+    animation: start 0.2s infinite linear;
+}
+.show{
+    animation: show 2s 1 linear;
+}
+.vibrate{
+    animation: vibrate 0.1s 2 linear;
+}
+.focus{
+    outline: 3px solid green;
+    border: none !important;
+}
+@keyframes vibrate {
+    0%{
+        transform: rotateZ(12deg);
+    }50%{
+        transform: rotateZ(-12deg);
+    }100%{
+        transform: rotateZ(12deg);
+    }   
+
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+    }    
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
