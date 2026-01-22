@@ -132,6 +132,6 @@ Focused on fundamentals, clean logic, and real-world learning.
 
 ---
 
-## `#`
+## `@adeelahmed | A developer`
 
 Vanilla JavaScript projects, beginner JavaScript projects, HTML CSS JS projects, JavaScript basics, DOM manipulation examples, frontend beginner projects, core JavaScript learning, JavaScript practice projects
